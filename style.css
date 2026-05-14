@@ -68,7 +68,7 @@ section h2{
 
 /* Seção Sobre Mim */
 #sobre-mim{
-    text-align: center;
+    text-align: start;
 }
 
 #sobre-mim p{
@@ -80,25 +80,59 @@ section h2{
     text-indent: 50px;
 }
 /*Linha do Tempo*/
-.timeline{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-}
-.timeline-item{
-    height: 100px;
-    padding-right: 10px;
-    border-right: 3px dotted white;
-    border-top: 10px solid white;
+.timeline {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    text-align: end;
-}
-.item-info{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
+}
+
+/* Linha branca horizontal */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+/* Item individual */
+.timeline-item {
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+
+/* Linha pontilhada vertical */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    border-left: 2px dotted #ffffff;
+}
+
+/* Texto */
+.item-info {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-info span:first-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.item-info span:last-child {
+    font-size: 14px;
+    font-weight: bold;
 }
 /* Linha do Tempo
 .timeline{
