@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #112233;
@@ -77,7 +78,7 @@ section h2{
     line-height: 1.6;
     font-size: 1.05rem;
     text-align: start;
-    text-indent: 50px;
+    text-indent: 25px;
 }
 /*Linha do Tempo*/
 .timeline {
@@ -134,47 +135,7 @@ section h2{
     font-size: 14px;
     font-weight: bold;
 }
-/* Linha do Tempo
-.timeline{
-    position: relative;
-    padding: 20px 0;
-}
 
-.timeline hr{
-    border: none;
-    border-top: 3px solid #285078;
-    margin-bottom: 30px;
-}
-
-.timeline-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 15px 20px;
-    background-color: rgba(40, 80, 120, 0.2);
-    border-left: 4px solid #285078;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.timeline-item:hover{
-    background-color: rgba(40, 80, 120, 0.4);
-    transform: translateX(10px);
-}
-
-.timeline-item span:first-child{
-    font-weight: 600;
-    flex: 1;
-}
-
-.timeline-item span:last-child{
-    font-size: 0.9rem;
-    background-color: #285078;
-    padding: 5px 15px;
-    border-radius: 20px; 
-    }
-*/
 /* Grid de Projetos - Cards */
 .grid-projetos{
     display: grid;
@@ -246,6 +207,7 @@ footer{
     height: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .media-socials{
