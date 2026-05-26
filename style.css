@@ -27,15 +27,6 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
-header img{
- width: 7%;
- border-radius: 50%;
- transition: .5s;
-}
-header img:hover{
-    transform: scale(1.3);
-    border: solid 1px white;
-}
 nav{
     width: 50%;
 }
@@ -69,7 +60,19 @@ section h2{
 
 /* Seção Sobre Mim */
 #sobre-mim{
-    text-align: start;
+    display: flex;
+    gap: 40px;
+    align-items: start;
+}
+
+#sobre-mim img{
+    width:40%;
+ border-radius: 50px;
+ transition: .5s;
+}
+#sobre-mim img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 #sobre-mim p{
@@ -268,7 +271,11 @@ footer{
     #sobre-mim p{
         font-size: 0.95rem;
     }
-    
+    #sobre-mim{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     footer{
         flex-direction: column;
         height: auto;
